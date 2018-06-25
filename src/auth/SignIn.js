@@ -54,17 +54,9 @@ class SignIn extends Component<{}> {
     return (
       <View style={styles.container}>
         <View style={styles.heading}>
-          <Image
-            source={require('../assets/shape.png')}
-            style={styles.headingImage}
-            resizeMode="contain"
-          />
         </View>
         <Text style={[styles.greeting]}>
-          Welcome back,
-        </Text>
-        <Text style={[styles.greeting2]}>
-          sign in to continue
+          Two.io
         </Text>
         <View style={styles.inputContainer}>
           <Input
@@ -155,8 +147,10 @@ const styles = StyleSheet.create({
   },
   greeting: {
     marginTop: 20,
-    fontSize: 24,
-    fontFamily: fonts.light
+    fontSize: 30,
+    fontFamily: fonts.light,
+    justifyContent: 'center',
+    textAlign: 'center'
   },
   greeting2: {
     color: '#666',

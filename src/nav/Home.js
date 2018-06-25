@@ -62,12 +62,7 @@ class Home extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.homeContainer}>
-          <Text style={styles.welcome}>Welcome</Text>
-          <Animated.Image
-            source={require('../assets/boomboxcropped.png')}
-            style={{ tintColor: colors.primary, width: width / 2, height: width / 2, transform: [{scale: this.AnimatedScale}]}}
-            resizeMode='contain'
-          />
+          <Text style={styles.welcome}>It Works Baby!!!</Text>
           <Text onPress={this.logout.bind(this)} style={styles.welcome}>Logout</Text>
         </View>
       </View>

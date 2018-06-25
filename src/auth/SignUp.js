@@ -64,14 +64,9 @@ class SignUp extends Component<{}> {
     return (
       <View style={styles.container}>
         <View style={styles.heading}>
-          <Image
-            source={require('../assets/shape.png')}
-            style={styles.headingImage}
-            resizeMode="contain"
-          />
         </View>
         <Text style={styles.greeting}>
-          Welcome,
+          Two.io,
         </Text>
         <Text style={styles.greeting2}>
           sign up to continue
@@ -163,15 +158,17 @@ const styles = StyleSheet.create({
     paddingHorizontal: 40
   },
   greeting: {
-    marginTop: 20,
+    marginTop: 25,
     fontFamily: fonts.light,
-    fontSize: 24
+    fontSize: 24,
+    textAlign: 'center'
   },
   greeting2: {
     fontFamily: fonts.light,
     color: '#666',
     fontSize: 24,
-    marginTop: 5
+    marginTop: 5,
+    textAlign: 'center'
   },
   heading: {
     flexDirection: 'row'
