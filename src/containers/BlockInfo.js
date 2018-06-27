@@ -12,7 +12,7 @@ export class BlockInfo extends Component {
     render() {
         return (
             <View style={{ backgroundColor: 'white' }}>
-                <View style={{ width: 500, height: 30 }} />
+                <View style={{ width: 500, height: 50 }} />
                 <Text style={[styles.header, styles.all]}>
                     2016 Louis Vuitton Keepall
                 </Text>
