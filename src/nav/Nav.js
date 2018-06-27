@@ -6,6 +6,7 @@ import { Image, StyleSheet } from 'react-native'
 import { colors, fonts } from '../theme'
 import ProdPage from '../containers/ProdPage'
 import BlockInfo from '../containers/BlockInfo'
+import EthExplorer from '../containers/EthExplorer'
 
 const styles = StyleSheet.create({
   icon: {
@@ -39,10 +40,22 @@ const routes = {
       )
     }
   },
-  Wallet: {
+  EthExplorer: {
+    screen: EthExplorer,
+    navigationOptions: {
+      title: 'EthExplorer',
+      tabBarIcon: ({ tintColor }) => (
+        <Image
+          source={require('../assets/signInButton.png')}
+          style={[styles.icon, { tintColor }]}
+        />
+      )
+    }
+  },
+  Account: {
     screen: ProdPage,
     navigationOptions: {
-      title: 'Wallet',
+      title: 'Account',
       tabBarIcon: ({ tintColor }) => (
         <Image
           source={require('../assets/signInButton.png')}
