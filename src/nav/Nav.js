@@ -1,10 +1,10 @@
 import React from 'react'
 import { StackNavigator } from 'react-navigation'
 
-import Home from './Home'
+import ProdPage from './ProdPage'
 
 const routeConfig = {
-  Home: { screen: Home },
+  ProdPage: { screen: ProdPage },
 }
 
 const StackNav = StackNavigator(routeConfig)

@@ -16,16 +16,12 @@ import { logOut } from '../actions'
 import { colors, fonts } from '../theme'
 const { width, height } = Dimensions.get('window')
 
-class Home extends React.Component {
+class ProdPage extends React.Component {
   static navigationOptions = {
     header: null
   }
   state = {
     username: ''
-  }
-  AnimatedScale = new Animated.Value(1)
-  componentDidMount() {
-    this.animate()
   }
   logout() {
     Auth.signOut()
@@ -38,25 +34,6 @@ class Home extends React.Component {
   }
   navigate() {
     this.props.navigation.navigate('Route1')
-  }
-  animate() {
-    Animated.timing(
-      this.AnimatedScale,
-      {
-        toValue: .8,
-        duration: 1250,
-        useNativeDriver: true
-      }
-    ).start(() => {
-      Animated.timing(
-        this.AnimatedScale,
-        {
-          toValue: 1,
-          duration: 1250,
-          useNativeDriver: true
-        }
-      ).start(() => this.animate())
-    })
   }
   render() {
     return (
@@ -105,4 +82,4 @@ const mapDispatchToProps = {
   dispatchLogout: () => logOut()
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(ProdPage)
