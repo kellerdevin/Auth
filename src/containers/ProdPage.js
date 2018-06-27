@@ -21,7 +21,6 @@ class ProdPage extends React.Component {
     super(props);
     this.state = {
       blockinfo: '',
-      avatar: '',
       prodTitle: '',
       subTitle: '',
       prodimg: '',
@@ -74,7 +73,7 @@ class ProdPage extends React.Component {
   render() {
     return (   
       <View style={{ backgroundColor: 'white' }}>
-      <View style={{ width: 500, height: 30, backgroundColor: 'white' }} />
+      <View style={{ width: 500, height: 40, backgroundColor: 'white' }} />
         <View style={{ flexDirection: "row" }}>
           <Text style={[styles.header, styles.all,]}>Wallet                             {'\n'}
             <Text style={[styles.hash, styles.all]}>
@@ -116,9 +115,9 @@ class ProdPage extends React.Component {
             />
           </View>
           <Text style={[styles.rat]}>
-            {'\n'}Jaeger-LeCoultre Polaris {'\n'}
+            {'\n'}{this.state.RAP1T}{'\n'}
             <Text style={[styles.rast,]}>
-              Chronograph, PINK GOLD          <Text style={[styles.views]}>   View    </Text>{'\n'}
+              {this.state.RAP1ST}          <Text style={[styles.views]}>   View    </Text>{'\n'}
               {'\n'} {'\n'}
               <View style={{ width: 500, height: 1, backgroundColor: 'grey' }} />
             </Text>
@@ -131,9 +130,9 @@ class ProdPage extends React.Component {
             source={{ url: this.state.RAP2img }}
           />
           <Text style={[styles.rat]}>
-            {'\n'} Hermes Birkin                    {'\n'}
+            {'\n'} {this.state.RAP2T}                    {'\n'}
             <Text style={[styles.rast,]}>
-              30cm Craie Epsom Birkin          <Text style={[styles.views]}>   View    </Text>{'\n'}
+              {this.state.RAP2ST}          <Text style={[styles.views]}>   View    </Text>{'\n'}
               {'\n'} {'\n'}
               <View style={{ width: 500, height: 1, backgroundColor: 'grey' }} />
             </Text>
@@ -164,14 +163,11 @@ const styles = StyleSheet.create({
   all: {
     marginLeft: 20,
   },
-  header: {
-    fontSize: 35,
-  },
   bold: {
     fontWeight: 'bold',
   },
   hash: {
-    fontSize: 10,
+    fontSize: 15,
   },
   gray: {
     color: 'dimgray',
@@ -180,38 +176,38 @@ const styles = StyleSheet.create({
     color: 'blue',
   },
   newProd: {
-    fontSize: 10,
+    fontSize: 15,
   },
   prodTitle: {
-    fontSize: 21,
+    fontSize: 26,
   },
   subTitle: {
-    fontSize: 16,
+    fontSize: 21,
   },
   recentAdd: {
-    fontSize: 16,
+    fontSize: 21,
     paddingLeft: 10,
   },
   seeAll: {
-    fontSize: 11,
+    fontSize: 16,
     textAlign: 'right',
     fontWeight: 'normal',
   },
   rA: {
-    width: 90,
-    height: 90,
+    width: 100,
+    height: 100,
     paddingBottom: 1,
   },
   rat: {
-    fontSize: 16,
+    fontSize: 21,
   },
   rast: {
-    fontSize: 14,
+    fontSize: 19,
     color: 'dimgrey',
   },
   copy: {
     color: 'blue',
-    fontSize: 8,
+    fontSize: 13,
     backgroundColor: 'whitesmoke',
     fontWeight: 'bold'
   },
@@ -231,16 +227,6 @@ const styles = StyleSheet.create({
     borderRadius: 30
   },
 
-  profile: {
-    width: 70,
-    height: 60,
-  },
-  all: {
-    marginLeft: 20,
-  },
-  header: {
-    fontSize: 32,
-  },
   bold: {
     fontWeight: 'bold',
   },
@@ -307,7 +293,7 @@ const styles = StyleSheet.create({
     height: 60,
   },
   header: {
-    fontSize: 23,
+    fontSize: 30,
     fontWeight: 'bold'
   },
   subtitle: {
@@ -346,9 +332,6 @@ const styles = StyleSheet.create({
     shadowColor: 'black',
 
   },
-  All: {
-    marginLeft: 20
-  },
   greyText: {
     backgroundColor: '#E9E4F1',
 
@@ -359,20 +342,6 @@ const styles = StyleSheet.create({
     fontSize: 15
   },
 
-
-
-
-
-
-
-
-  all: {
-    marginLeft: 20,
-  },
-  header: {
-    fontSize: 30,
-    fontWeight: 'bold'
-  },
   hash: {
     fontSize: 10,
     color: 'gray'
