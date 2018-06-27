@@ -6,8 +6,6 @@ router.get('/', (req, res, next) => {
         {
             blockinfo: '0x627306090abab3a6e140...',
 
-            avatar: "https://o.aolcdn.com/images/dims?quality=100&image_uri=http%3A%2F%2Fwww.blogcdn.com%2Fwww.engadget.com%2Fmedia%2F2013%2F03%2F2scanadus-walter-de-brouwer-backstage-at-expand-video.jpg&client=cbc79c14efcebee57402&signature=42294b1a66cf7ca9639bba7dcb8b7d48339e3825",
-
             prodTitle: "2016 Louis Vuitton Keepall",
             subTitle: "Classic Monogram",
             prodimg: "https://a.1stdibscdn.com/archivesE/upload/1121189/v_34701811510039784334/3470181_master.jpg?width=500",
