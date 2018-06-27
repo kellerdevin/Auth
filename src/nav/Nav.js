@@ -38,7 +38,19 @@ const routes = {
         />
       )
     }
-  }
+  },
+  Wallet: {
+    screen: ProdPage,
+    navigationOptions: {
+      title: 'Wallet',
+      tabBarIcon: ({ tintColor }) => (
+        <Image
+          source={require('../assets/signInButton.png')}
+          style={[styles.icon, { tintColor }]}
+        />
+      )
+    }
+  },
 }
 
 const routeConfig = {
